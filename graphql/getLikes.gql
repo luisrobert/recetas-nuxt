@@ -1,0 +1,10 @@
+query($id:ID!){
+    receta(id:$id){
+        data{
+          id
+          attributes{
+            likes
+          }
+        }
+    }
+}

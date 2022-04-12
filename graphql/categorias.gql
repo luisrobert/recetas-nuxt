@@ -1,0 +1,30 @@
+query{
+  categorias{
+    data{
+      id
+      attributes{
+        name
+        icon
+        slug
+        img
+      }
+    }
+  }
+  recetas{
+    data{
+      id
+      attributes{
+        name
+        categoria{
+          data{
+            id
+            attributes{
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  }
+}
