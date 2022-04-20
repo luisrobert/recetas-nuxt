@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    {{recetas}}
     <h1 class="secondary--text">
       {{categoria.name}}
       <v-icon large class="secondary--text">{{categoria.icon}}</v-icon>

@@ -1,5 +1,6 @@
 <template>
 <v-container>
+  esto es index
   <v-row>
     <v-col cols="3" v-for="category in categorias" :key="category.id">
       <app-ui-nav-card :category="category"></app-ui-nav-card>

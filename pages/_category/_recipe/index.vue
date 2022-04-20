@@ -1,14 +1,14 @@
 <template>
   <v-container>
-      {{userFavorites}}
-      {{recipeIsLiked}}
+      <!-- {{userFavorites}}
+      {{recipeIsLiked}} -->
     <h1 class="secondary--text">{{receta.name}}</h1>
     <h5 class="secondary--text">{{receta.categoria.name}}</h5>
     <v-card class="mt-3">
-        <c-card-title>
+        <v-card-title>
             <v-icon>mdi-information</v-icon>
             Informacion
-        </c-card-title>
+        </v-card-title>
         <v-card-text class="black--text">
             <v-row>
                 <v-col cols="6">
@@ -37,13 +37,14 @@
                 </v-col>
             </v-row>
         </v-card-text>
-        <v-card-action>
+
+        <v-card-actions>
             <v-btn icon v-if="$auth.loggedIn" large @click="toggleLiked()">
                 <v-icon :color="recipeIsLiked?'error':'grey'" large>mdi-heart</v-icon>
             </v-btn>
             <v-icon v-else class="mr-3">mdi-heart</v-icon>
             <span class="overline">Likes {{receta.likes}}</span>
-        </v-card-action>
+        </v-card-actions> 
     </v-card>     
 
     <div class="mt-3">
