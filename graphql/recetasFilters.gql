@@ -1,5 +1,5 @@
-query{
-  recetas{
+query recetas($slug:String!){
+  recetas(filters:{categoria:{slug:{eq:$slug}}}){
     data{
       id
       attributes{

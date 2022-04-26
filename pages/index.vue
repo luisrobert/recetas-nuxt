@@ -1,9 +1,8 @@
 <template>
 <v-container>
-  esto es index
-  {{categorias}}
+
   <v-row>
-    <v-col cols="3" v-for="category in categorias" :key="category.id">
+    <v-col lg="3" v-for="category in categorias" :key="category.id">
       <app-ui-nav-card :category="category"></app-ui-nav-card>
     </v-col>
   </v-row>
